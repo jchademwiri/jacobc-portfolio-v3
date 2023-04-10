@@ -1,9 +1,10 @@
 import Script from 'next/script';
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Inter, Montserrat } from 'next/font/google';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 const inter = Inter({ subsets: ['latin'] });
+const montserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata = {
   title: {
