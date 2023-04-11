@@ -79,7 +79,9 @@ export default function RootLayout({
     });
         `}
       </Script>
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} w-full h-screen bg-bodyColor text-light overflow-x-hidden overflow-y-scroll`}
+      >
         <Navbar />
         {children}
         <Footer />

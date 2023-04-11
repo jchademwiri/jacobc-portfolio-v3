@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: 'jit',
   content: [
     './src/**/*.{js,ts,jsx,tsx}', // Note the addition of the `app` directory.
     './components/**/*.{js,ts,jsx,tsx}',
@@ -22,14 +23,15 @@ module.exports = {
         lgl: '1024px',
         xl: '1280px',
       },
+
       boxShadow: {
         navbarShadow: '0 10px 30px -10px rgba(2,12,27,0.7)',
       },
       colors: {
         bodyColor: '#0A192F',
-        textGreen: '#64FFDA',
-        textLight: '#CCD6F6',
-        textDark: '#8892B0',
+        green: '#64FFDA',
+        light: '#CCD6F6',
+        dark: '#8892B0',
         hoverColor: 'rgba(100,255,218,0.1)',
       },
     },
