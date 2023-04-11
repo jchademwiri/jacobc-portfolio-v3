@@ -13,17 +13,6 @@ module.exports = {
         containerSmall: '1024px',
         containerxs: '768px',
       },
-      sreeens: {
-        xs: '320px',
-        sm: '375px',
-        sml: '500px',
-        md: '667px',
-        mdl: '768px',
-        lg: '960px',
-        lgl: '1024px',
-        xl: '1280px',
-      },
-
       boxShadow: {
         navbarShadow: '0 10px 30px -10px rgba(2,12,27,0.7)',
       },
