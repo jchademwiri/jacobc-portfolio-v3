@@ -6,11 +6,15 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { links } from '@/data/Navlinks';
 import uuid from 'react-uuid';
+import { Inter } from 'next/font/google';
+const inter = Inter({ subsets: ['latin'] });
 
 const Navbar = () => {
   return (
     <div className='w-full shadow-navbarShadow h-20 lg:h-[12vh] sticky top-0 z-50 bg-bodyColor px-4'>
-      <nav className='max-w-container h-full mx-auto py-1 flex items-center justify-between'>
+      <nav
+        className={`${inter.className} max-w-container h-full mx-auto py-1 flex items-center justify-between`}
+      >
         {/* add title font  */}
         <motion.div
           initial={{ opacity: 0 }}

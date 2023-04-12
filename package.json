@@ -1,4 +1,13 @@
 {
+  "name": "jacobc-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
     "@types/node": "18.15.0",
     "@types/react": "18.0.28",
@@ -8,6 +17,7 @@
     "next": "^13.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
     "react-uuid": "^2.0.0",
     "typescript": "4.9.5"
   },
@@ -15,6 +25,8 @@
     "autoprefixer": "^10.4.14",
     "eslint-config-next": "^13.3.0",
     "postcss": "^8.4.21",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.7",
     "tailwindcss": "^3.2.7"
   }
 }

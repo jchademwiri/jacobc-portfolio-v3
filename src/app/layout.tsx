@@ -3,7 +3,7 @@ import './globals.css';
 import { Inter, Montserrat } from 'next/font/google';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
-const inter = Inter({ subsets: ['latin'] });
+
 const montserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata = {
@@ -80,7 +80,7 @@ export default function RootLayout({
         `}
       </Script>
       <body
-        className={`${inter.className} w-full h-screen bg-bodyColor text-light overflow-x-hidden overflow-y-scroll`}
+        className={`${montserrat.className} w-full h-screen mx-auto bg-bodyColor text-light overflow-x-hidden overflow-y-scroll`}
       >
         <Navbar />
         {children}

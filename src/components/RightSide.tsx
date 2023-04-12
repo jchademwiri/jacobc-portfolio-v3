@@ -7,14 +7,14 @@ const RightSide = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className='w-full h-full flex flex-col items-center justify-end gap-6 text-light'
+      className='flex h-full w-full flex-col items-center justify-end gap-6 text-light'
     >
       <Link href='mailto:jchademwiri@gmail.com' target='_blank'>
-        <p className='text-sm rotate-90 w-72 tracking-wide text-green'>
+        <p className='my-6 flex w-72 rotate-90 text-sm tracking-wide text-green'>
           jchademwiri@gmail.com
         </p>
       </Link>
-      <span className='w-[2px] h-[100px] bg-dark'></span>
+      <span className='h-[200px] w-[2px] bg-dark'></span>
     </motion.div>
   );
 };
