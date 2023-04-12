@@ -1,4 +1,8 @@
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <footer id='about' className={`relative text-center`}>
+      Footer
+    </footer>
+  );
 };
 export default Footer;

@@ -80,11 +80,11 @@ export default function RootLayout({
         `}
       </Script>
       <body
-        className={`${montserrat.className} w-full h-screen mx-auto bg-bodyColor text-light overflow-x-hidden overflow-y-scroll`}
+        className={`${montserrat.className} mx-auto h-screen w-full overflow-x-hidden overflow-y-scroll bg-bodyColor text-light`}
       >
         <Navbar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
