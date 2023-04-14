@@ -1,7 +1,7 @@
 'use client';
-import { Inter } from 'next/font/google';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 const Banner = () => {
@@ -36,7 +36,7 @@ const Banner = () => {
         I am a web developer with 4+ years of experience in React. I have a
         strong foundation in front-end & back-end development and am skilled in
         creating user-friendly and responsive web applications using React and
-        its ecosystem.
+        its ecosystem. <br />
         <Link href={`/`} target='_blank'>
           <span className='group relative inline-flex h-7 cursor-pointer  overflow-x-hidden text-green'>
             Learn More.

@@ -1,6 +1,6 @@
 import Script from 'next/script';
 import './globals.css';
-import { Inter, Montserrat } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 
@@ -80,7 +80,7 @@ export default function RootLayout({
         `}
       </Script>
       <body
-        className={`${montserrat.className} mx-auto h-screen w-full overflow-x-hidden overflow-y-scroll bg-bodyColor text-light`}
+        className={`${montserrat.className}min-h-screen overflow-x-hidden overflow-y-scroll  bg-bodyColor text-light`}
       >
         <Navbar />
         {children}

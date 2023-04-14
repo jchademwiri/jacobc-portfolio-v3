@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 const Navbar = () => {
   return (
-    <header className='sticky top-0 z-50 h-20 w-full bg-bodyColor px-4 shadow-navbarShadow lg:h-[12vh]'>
+    <header className='fixed top-0 z-50 h-20 w-full bg-bodyColor px-4 shadow-navbarShadow lg:h-[12vh]'>
       <nav
         className={`${inter.className} mx-auto flex h-full max-w-container items-center justify-between py-1`}
       >
@@ -57,7 +57,7 @@ const Navbar = () => {
         {/* mobile icon */}
         <div className='group flex h-5 w-6 cursor-pointer flex-col items-center justify-between overflow-hidden text-4xl text-green md:hidden'>
           <span className='inline-flex h-[2px] w-full transform bg-green transition-all duration-300 ease-in-out group-hover:translate-x-2'></span>
-          <span className='inline-flex h-[2px] w-full transform bg-green transition-all duration-300 ease-in-out group-hover:translate-x-3'></span>
+          <span className='inline-flex h-[2px] w-full transform bg-light transition-all duration-300 ease-in-out group-hover:translate-x-3'></span>
           <span className='inline-flex h-[2px] w-full transform bg-green transition-all duration-300 ease-in-out group-hover:translate-x-1'></span>
         </div>
       </nav>

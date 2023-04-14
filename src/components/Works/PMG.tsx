@@ -11,9 +11,12 @@ const PMG = () => {
       transition={{ duration: 0.5, delay: 0.2 }}
     >
       <h3 className={`${inter.className} flex gap-1  text-xl font-medium`}>
-        Title <span className='tracking-wide text-green'>@PMG</span>
+        Freelance Web Developer{' '}
+        <span className='tracking-wide text-green'>
+          @ Playhouse Media Group
+        </span>
       </h3>
-      <p className='mt-1 text-sm font-medium text-dark'>Date</p>
+      <p className='mt-1 text-sm font-medium text-dark'>Jan 2021 - Date</p>
       <ul className='mt-6 flex flex-col gap-3'>
         <li className='flex gap-2 text-base text-dark'>
           <span className='mt-1 text-green'>

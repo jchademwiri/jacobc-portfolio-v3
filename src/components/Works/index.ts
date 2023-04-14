@@ -1,5 +1,5 @@
 import PMG from './PMG';
 import Sithembe from './Sithembe';
-import Buam from './Buam';
+import Baum from './Baum';
 
-export { PMG, Sithembe, Buam };
+export { PMG, Sithembe, Baum };

@@ -4,7 +4,7 @@ import { TiArrowForward } from 'react-icons/ti';
 import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
-const Sithembe = () => {
+const Baum = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -12,12 +12,10 @@ const Sithembe = () => {
       transition={{ duration: 0.5, delay: 0.2 }}
     >
       <h3 className={`${inter.className} flex gap-1  text-xl font-medium`}>
-        Tender Manager{' '}
-        <span className='tracking-wide text-green'>
-          @ Sithembe Transportation and Projects
-        </span>
+        Freelance Web Developer{' '}
+        <span className='tracking-wide text-green'>@ Baum Systems</span>
       </h3>
-      <p className='mt-1 text-sm font-medium text-dark'>Jan 2022 - Current</p>
+      <p className='mt-1 text-sm font-medium text-dark'>Jan 2020 - Dec 2022</p>
       <ul className='mt-6 flex flex-col gap-3'>
         <li className='flex gap-2 text-base text-dark'>
           <span className='mt-1 text-green'>
@@ -47,4 +45,4 @@ const Sithembe = () => {
     </motion.div>
   );
 };
-export default Sithembe;
+export default Baum;

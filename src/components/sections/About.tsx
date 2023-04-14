@@ -1,14 +1,19 @@
+'use client';
 import { logo, profile, social } from '@/data/assets';
 import { skills } from '@/data/Skills';
 import Image from 'next/image';
 import { AiFillThunderbolt } from 'react-icons/ai';
 import uuid from 'react-uuid';
 import TitleSection from '../TitleSection';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <section
+    <motion.section
       id='about'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.6 }}
       className={` mx-auto flex max-w-contentContainer flex-col gap-4 py-10 md:py-24 md:px-10 lg:gap-8 xl:px-4`}
     >
       <TitleSection titleNumber='01.' title='About me' />
@@ -35,19 +40,24 @@ const About = () => {
         </div>
         <div className='group relative h-80 w-full lg:w-1/3'>
           <div className='group absolute -left-6 -top-6 h-80 w-full rounded-lg'>
-            <div className='relative z-20 flex h-full w-full pl-6 lg:pl-0'>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className='relative z-20 flex h-full w-full pl-6 lg:pl-0'
+            >
               <Image
                 className='h-full rounded-lg object-cover'
                 src={logo}
                 alt='Profile Picture'
               />
               <div className='absolute top-0 left-0 hidden h-80 w-full rounded-md bg-green/20 duration-300 group-hover:bg-transparent lg:inline-block'></div>
-            </div>
+            </motion.div>
           </div>
           <div className='top-4 left-4 hidden h-80 w-full rounded-md border-2 border-green bg-transparent transition-transform duration-300 group-hover:-translate-y-2 group-hover:-translate-x-2 lg:inline-flex'></div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 export default About;

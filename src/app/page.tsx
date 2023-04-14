@@ -1,4 +1,7 @@
+import Footer from '@/components/Footer';
 import LeftSide from '@/components/LeftSide';
+import { Achive } from '@/components/Projects';
+
 import RightSide from '@/components/RightSide';
 import {
   About,
@@ -12,7 +15,7 @@ const montserrat = Montserrat({ subsets: ['latin'] });
 
 export default function Home() {
   return (
-    <main className='h-[88vh] w-full items-center justify-between gap-20 xl:flex'>
+    <main className='mx-auto h-[88vh] w-full items-center justify-between gap-20 xl:flex'>
       <div className='fixed left-0 bottom-0 hidden h-full w-32 xl:inline-flex'>
         <LeftSide />
       </div>
@@ -25,9 +28,9 @@ export default function Home() {
         <Experiance />
         {/* Projects  */}
         <Projects />
-        {/* Achive / Blog  */}
         {/* Contact  */}
         <Contact />
+        <Footer />
       </div>
       <div className='fixed right-0 bottom-0 hidden h-full w-32 xl:inline-flex'>
         <RightSide />
