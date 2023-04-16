@@ -9,10 +9,9 @@ const Projects = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5, delay: 0.6 }}
+      className='section mx-auto flex max-w-contentContainer flex-col gap-4 py-10 md:py-24 md:px-10 lg:gap-8 xl:px-4'
     >
-      <motion.section
-        className={`mx-auto flex max-w-contentContainer flex-col gap-4 py-10 md:py-24 md:px-10 lg:gap-8 xl:px-4`}
-      >
+      <motion.article>
         <TitleSection titleNumber='03.' title='Recently Completed Projects' />
         <div className='mt-10 flex w-full flex-col items-center justify-center gap-28'>
           {/* Featured Project 1 */}
@@ -23,7 +22,7 @@ const Projects = () => {
           <ProjectThree />
         </div>
         {/* Achive Projects  */}
-      </motion.section>
+      </motion.article>
       <Achive />
     </motion.section>
   );

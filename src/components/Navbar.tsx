@@ -1,5 +1,5 @@
 'use client';
-
+import { useState, useRef, useEffect } from 'react';
 import { logo } from '@/data/assets';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -10,6 +10,57 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 const Navbar = () => {
+  const [activeLink, setActiveLink] = useState<string | null>(null);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Set the active link to the href of the intersecting element
+            setActiveLink(`#${entry.target.id}`);
+          }
+        });
+      },
+      { threshold: 0.3 } // Set the threshold to 0.5 so that the link is considered active when it's halfway in view
+    );
+
+    // Observe all the elements with the "section" class
+    const sections = document.querySelectorAll('.section');
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    // Cleanup the observer when the component unmounts
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+
+    // Get the target ID from the href attribute
+    const targetId = e.currentTarget.getAttribute('href');
+
+    // Scroll smoothly to the target element
+    const targetElem = targetId ? document.querySelector(targetId) : null;
+    if (targetElem) {
+      targetElem.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Set the active link to the clicked link
+    setActiveLink(targetId);
+
+    // Remove the "active" class from the links that are not in view
+    const links = Array.from(document.querySelectorAll('.nav-link'));
+    links.forEach((link) => {
+      const href = link.getAttribute('href');
+      if (href !== targetId && href !== activeLink) {
+        link.classList.remove('active');
+      }
+    });
+  };
+
   return (
     <header className='fixed top-0 z-50 h-20 w-full bg-bodyColor px-4 shadow-navbarShadow lg:h-[12vh]'>
       <nav
@@ -36,7 +87,10 @@ const Navbar = () => {
               >
                 <Link
                   href={link}
-                  className='text-Dark nav-link flex cursor-pointer items-center gap-1 font-medium duration-300 hover:text-green'
+                  onClick={handleScroll}
+                  className={`text-Dark nav-link flex cursor-pointer items-center gap-1 font-medium duration-300 hover:text-green ${
+                    link === activeLink ? 'active' : ''
+                  }`}
                 >
                   <span className='text-green'>{num}</span> {name}
                 </Link>
@@ -55,7 +109,10 @@ const Navbar = () => {
           </Link>
         </div>
         {/* mobile icon */}
-        <div className='group flex h-5 w-6 cursor-pointer flex-col items-center justify-between overflow-hidden text-4xl text-green md:hidden'>
+        <div
+          // onClick={handleClick}
+          className='group flex h-5 w-6 cursor-pointer flex-col items-center justify-between overflow-hidden text-4xl text-green md:hidden'
+        >
           <span className='inline-flex h-[2px] w-full transform bg-green transition-all duration-300 ease-in-out group-hover:translate-x-2'></span>
           <span className='inline-flex h-[2px] w-full transform bg-light transition-all duration-300 ease-in-out group-hover:translate-x-3'></span>
           <span className='inline-flex h-[2px] w-full transform bg-green transition-all duration-300 ease-in-out group-hover:translate-x-1'></span>

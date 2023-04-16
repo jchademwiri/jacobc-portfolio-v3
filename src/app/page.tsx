@@ -16,9 +16,9 @@ const montserrat = Montserrat({ subsets: ['latin'] });
 export default function Home() {
   return (
     <main className='mx-auto h-[88vh] w-full items-center justify-between gap-20 xl:flex'>
-      <div className='fixed left-0 bottom-0 hidden h-full w-32 xl:inline-flex'>
+      <section className='fixed left-0 bottom-0 hidden h-full w-32 xl:inline-flex'>
         <LeftSide />
-      </div>
+      </section>
       <div className='mx-auto h-[88vh] w-full p-4'>
         {/* Banner  */}
         <Banner />
@@ -30,11 +30,12 @@ export default function Home() {
         <Projects />
         {/* Contact  */}
         <Contact />
+        {/* Footer  */}
         <Footer />
       </div>
-      <div className='fixed right-0 bottom-0 hidden h-full w-32 xl:inline-flex'>
+      <section className='fixed right-0 bottom-0 hidden h-full w-32 xl:inline-flex'>
         <RightSide />
-      </div>
+      </section>
     </main>
   );
 }

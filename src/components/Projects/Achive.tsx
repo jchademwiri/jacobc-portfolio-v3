@@ -8,7 +8,8 @@ const inter = Inter({ subsets: ['latin'] });
 const Achive = () => {
   const [showMore, setShowMore] = useState(false);
   return (
-    <motion.div
+    <motion.article
+      id='projects'
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5, delay: 0.6 }}
@@ -19,7 +20,7 @@ const Achive = () => {
           Other Projects
         </h2>
         <p className='text-center text-green'>View The Archive</p>
-        <div className='mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-3 '>
+        <div className='mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 '>
           <AchiveCard
             title='Project Title'
             description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
@@ -145,7 +146,7 @@ const Achive = () => {
           )}
         </div>
       </div>
-    </motion.div>
+    </motion.article>
   );
 };
 export default Achive;

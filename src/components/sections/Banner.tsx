@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     <section
       id='home'
-      className={` mx-auto flex max-w-contentContainer flex-col gap-4 py-10 md:py-24 md:px-10 lg:gap-8 xl:px-4`}
+      className={`section mx-auto flex max-w-contentContainer flex-col gap-4 py-10 md:py-24 md:px-10 lg:gap-8 xl:px-4`}
     >
       <motion.h3
         initial={{ opacity: 0 }}

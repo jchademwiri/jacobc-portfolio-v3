@@ -8,7 +8,7 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 const ProjectThree = () => {
   return (
-    <div className='mt-10 flex w-full flex-col items-center justify-center gap-28'>
+    <article className='mt-10 flex w-full flex-col items-center justify-center gap-28'>
       <div className='flex flex-col gap-6 lg:flex-row'>
         <Link
           href={`/`}
@@ -52,7 +52,7 @@ const ProjectThree = () => {
           </div>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 export default ProjectThree;

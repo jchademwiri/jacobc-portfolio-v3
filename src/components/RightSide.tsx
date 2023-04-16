@@ -6,7 +6,7 @@ const RightSide = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1.5 }}
+      transition={{ duration: 0.5 }}
       className='flex h-full w-full flex-col items-center justify-end gap-6 text-light'
     >
       <Link href='mailto:jchademwiri@gmail.com' target='_blank'>

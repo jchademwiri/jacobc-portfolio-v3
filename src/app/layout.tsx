@@ -80,7 +80,7 @@ export default function RootLayout({
         `}
       </Script>
       <body
-        className={`${montserrat.className}min-h-screen overflow-x-hidden overflow-y-scroll  bg-bodyColor text-light`}
+        className={`${montserrat.className} min-h-screen overflow-x-hidden overflow-y-scroll  bg-bodyColor text-light scrollbar scrollbar-track-dark/20 scrollbar-thumb-dark/60`}
       >
         <Navbar />
         {children}
