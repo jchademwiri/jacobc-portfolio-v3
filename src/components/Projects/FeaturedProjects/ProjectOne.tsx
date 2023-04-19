@@ -2,7 +2,6 @@ import { social } from '@/data/assets';
 import Image from 'next/image';
 import Link from 'next/link';
 import { TbBrandGithub } from 'react-icons/tb';
-import { AiOutlineYoutube } from 'react-icons/ai';
 import { RxOpenInNewWindow } from 'react-icons/rx';
 import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
@@ -30,11 +29,10 @@ const ProjectOne = () => {
             Sithembe Transportation & Projects
           </h3>
           <p className=' rounded-md bg-[#112240] p-2 text-sm md:p-6 md:text-base'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-            ratione exercitationem, itaque debitis iure sunt accusamus
-            reprehenderit expedita voluptas obcaecati! Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Inventore vel obcaecati
-            <span className='text-green'> focus text </span>
+            Sithembe Transportation and Projects is a privately owned company in
+            continuous, uninterrupted business since 2013. STP is committed to
+            transformation and believes that it has a responsibility to act on
+            this commitment.
           </p>
           <ul
             className={`${inter.className} flex justify-between gap-2 text-xs tracking-wide text-dark md:gap-5 md:text-sm`}
@@ -46,14 +44,14 @@ const ProjectOne = () => {
           </ul>
           <div className='flex gap-4 text-2xl'>
             <Link
-              href={'/'}
+              href='https://github.com/jchademwiri/'
               target='_blank'
               className='duration-300 hover:text-green'
             >
               <TbBrandGithub />
             </Link>
             <Link
-              href={'/'}
+              href='https://sithembe-official-website.vercel.app/'
               target='_blank'
               className='duration-300 hover:text-green'
             >

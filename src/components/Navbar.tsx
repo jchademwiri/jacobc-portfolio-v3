@@ -9,6 +9,7 @@ import { links } from '@/data/Navlinks';
 import uuid from 'react-uuid';
 import { Inter } from 'next/font/google';
 import Icons from './Icons';
+import ResumeButton from './ResumeButton';
 const inter = Inter({ subsets: ['latin'] });
 
 const Navbar = () => {
@@ -110,16 +111,7 @@ const Navbar = () => {
               </motion.li>
             ))}
           </ul>
-          <Link href='/' target='_blank'>
-            <motion.button
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              className='rounded-md border border-green px-4 py-2 text-[13px] text-green duration-300 hover:bg-hoverColor'
-            >
-              Resume
-            </motion.button>
-          </Link>
+          <ResumeButton />
         </div>
         {/* mobile icon */}
         <div
@@ -147,7 +139,7 @@ const Navbar = () => {
                 className='absolute top-4 right-4 cursor-pointer text-3xl text-green hover:text-light'
               />
               <div className='flex flex-col items-center gap-7'>
-                <ul className='flex flex-col  gap-7 text-base'>
+                <ul className='flex flex-col  items-center gap-7 text-base'>
                   {links.map(({ num, name, link }) => (
                     <motion.li
                       key={uuid()}
@@ -167,16 +159,8 @@ const Navbar = () => {
                     </motion.li>
                   ))}
                 </ul>
-                <Link href='/' target='_blank'>
-                  <motion.button
-                    initial={{ x: 20, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 0.7, delay: 0.4, ease: 'easeIn' }}
-                    className='rounded-md border border-green px-4 py-2 text-[13px] text-green duration-300 hover:bg-hoverColor'
-                  >
-                    Resume
-                  </motion.button>
-                </Link>
+                {/* button  */}
+                <ResumeButton />
                 <div className='flex gap-4'>
                   <Icons />
                 </div>

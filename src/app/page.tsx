@@ -1,7 +1,5 @@
 import Footer from '@/components/Footer';
 import LeftSide from '@/components/LeftSide';
-import { Achive } from '@/components/Projects';
-
 import RightSide from '@/components/RightSide';
 import {
   About,
@@ -10,8 +8,6 @@ import {
   Experiance,
   Projects,
 } from '@/components/sections';
-import { Montserrat } from 'next/font/google';
-const montserrat = Montserrat({ subsets: ['latin'] });
 
 export default function Home() {
   return (

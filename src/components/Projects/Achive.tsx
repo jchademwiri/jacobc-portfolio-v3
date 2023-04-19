@@ -22,25 +22,22 @@ const Achive = () => {
         <p className='text-center text-green'>View The Archive</p>
         <div className='mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 '>
           <AchiveCard
-            title='Project Title'
-            description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-            tenetur porro iusto, adipisci voluptatibus id.'
-            technologies={['NextJS', 'TailwindCSS', 'Vercel']}
-            link='/'
+            title='King Tax Accounting Services'
+            description='King Tax Accounting Services is a company that helps to register companies and provide accounting services and tax returns for companies and individuals, they also ensure that your business is tax compliant.'
+            technologies={['React', 'NextJS', 'TailwindCSS', 'Vercel']}
+            link='https://www.kingtaxaccounting.co.za/'
           />
           <AchiveCard
-            title='Project Title'
-            description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-            tenetur porro iusto, adipisci voluptatibus id.'
-            technologies={['NextJS', 'TailwindCSS', 'Vercel']}
-            link='/'
+            title='Sea Harvest Zimbabwe'
+            description='Sea Harvest is a Zimbabwean fish company that specializes in fresh fish from the Kariba and supplies in places in Mutare. I spearheaded the development of the site from the ground up.'
+            technologies={['React', 'Styled Components', 'Netlify']}
+            link='https://seaharvest.co.zw/'
           />
           <AchiveCard
-            title='Project Title'
-            description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-          tenetur porro iusto, adipisci voluptatibus id.'
-            technologies={['NextJS', 'TailwindCSS', 'Vercel']}
-            link='/'
+            title='Edurite'
+            description='Edurite offers unique, personalized, professional, virtual assistance with academic assignments and research projects in Business Studies. I championed the development of the site from the ground up using wordpress using elementor page builder, I then created social media pages for the site and connected their business to Google my Business.'
+            technologies={['WordPress', 'Elementor']}
+            link='https://www.edurite.co.za/'
           />
 
           {showMore && (
@@ -51,77 +48,15 @@ const Achive = () => {
                 transition={{ delay: 0.1 }}
               >
                 <AchiveCard
-                  title='Project Title'
-                  description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-        tenetur porro iusto, adipisci voluptatibus id.'
-                  technologies={['NextJS', 'TailwindCSS', 'Vercel']}
-                  link='/'
-                />
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.2 }}
-              >
-                <AchiveCard
-                  title='Project Title'
-                  description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-        tenetur porro iusto, adipisci voluptatibus id.'
-                  technologies={['NextJS', 'TailwindCSS', 'Vercel']}
-                  link='/'
-                />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.3 }}
-              >
-                <AchiveCard
-                  title='Project Title'
-                  description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-        tenetur porro iusto, adipisci voluptatibus id.'
-                  technologies={['NextJS', 'TailwindCSS', 'Vercel']}
-                  link='/'
-                />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.4 }}
-              >
-                <AchiveCard
-                  title='Project Title'
-                  description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-        tenetur porro iusto, adipisci voluptatibus id.'
-                  technologies={['NextJS', 'TailwindCSS', 'Vercel']}
-                  link='/'
-                />
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.5 }}
-              >
-                <AchiveCard
-                  title='Project Title'
-                  description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-        tenetur porro iusto, adipisci voluptatibus id.'
-                  technologies={['NextJS', 'TailwindCSS', 'Vercel']}
-                  link='/'
-                />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.6 }}
-              >
-                <AchiveCard
-                  title='Project Title'
-                  description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-        tenetur porro iusto, adipisci voluptatibus id.'
-                  technologies={['NextJS', 'TailwindCSS', 'Vercel']}
+                  title='Playhouse Media Group'
+                  description='Playhouse Media Group is a media company that specializes in the creation responsive websites and applications that are user friendly and easy to use and seo optimized with a focus on speed and performance.'
+                  technologies={[
+                    'NextJS',
+                    'TailwindCSS',
+                    'SanityCMS',
+                    'Cloudinary',
+                    'Vercel',
+                  ]}
                   link='/'
                 />
               </motion.div>

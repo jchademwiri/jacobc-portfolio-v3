@@ -2,7 +2,7 @@ import Icons from './Icons';
 
 const Footer = () => {
   return (
-    <footer className='hidden w-full items-center justify-center gap-4 py-6 md:inline-flex'>
+    <footer className='absolute hidden w-full items-center justify-center gap-4 py-6 md:inline-flex'>
       <Icons />
     </footer>
   );

@@ -27,11 +27,9 @@ const ProjectThree = () => {
           </p>
           <h3 className='text-2xl font-bold'>Solabank Online Shop</h3>
           <p className=' rounded-md bg-[#112240] p-2 text-sm md:p-6 md:text-base'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-            ratione exercitationem, itaque debitis iure sunt accusamus
-            reprehenderit expedita voluptas obcaecati! Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Inventore vel obcaecati
-            <span className='text-green'> focus text </span>
+            Solar Bank provides high-quality solar and battery solutions for
+            backup power or off-grid living. Our dedicated team helps you find
+            the perfect fit for your needs.
           </p>
           <ul
             className={`${inter.className} flex justify-between gap-2 text-xs tracking-wide text-dark md:gap-5 md:text-sm`}
@@ -43,7 +41,14 @@ const ProjectThree = () => {
           </ul>
           <div className='flex gap-4 text-2xl'>
             <Link
-              href={'/'}
+              href='https://github.com/jchademwiri/'
+              target='_blank'
+              className='duration-300 hover:text-green'
+            >
+              <TbBrandGithub />
+            </Link>
+            <Link
+              href='https://solarbank.co.za/'
               target='_blank'
               className='duration-300 hover:text-green'
             >
