@@ -1,7 +1,7 @@
 import Script from 'next/script';
 import './globals.css';
 import { Montserrat } from 'next/font/google';
-import Footer from '@/components/Footer';
+
 import Navbar from '@/components/Navbar';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
@@ -84,7 +84,6 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
-        {/* <Footer /> */}
       </body>
     </html>
   );
