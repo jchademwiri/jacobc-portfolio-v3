@@ -2,7 +2,6 @@ import { social } from '@/data/assets';
 import Image from 'next/image';
 import Link from 'next/link';
 import { TbBrandGithub } from 'react-icons/tb';
-import { AiOutlineYoutube } from 'react-icons/ai';
 import { RxOpenInNewWindow } from 'react-icons/rx';
 import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
